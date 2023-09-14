@@ -15,7 +15,7 @@ document.getElementById('verificarBoton').addEventListener('click', function() {
       document.getElementById('siguiente').removeAttribute('disabled');
   } else {
       // Si no existe, mostrar mensaje de error
-      errorMensaje.textContent = 'Error: El contenido no contiene <h1>Bienvenido a la clase de HTML5</h1>';
+      errorMensaje.textContent = 'Error: En el contenido <h1></h1>';
       // Limpiar el contenido del div
       divContenido.innerHTML = '';
   }

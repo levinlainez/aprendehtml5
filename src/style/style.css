@@ -329,7 +329,15 @@ body::-webkit-scrollbar-thumb {
         background-color: #f0f0f0;
         border: 1px solid #ccc;
         padding: 10px;
-        height: 270px;
+        height: 440px;
+        font-size: 3.8rem;
     }
 
-    
+    #divContenido {
+      font-size: 2.5rem;
+  }
+
+  /* Estilo para el h2 dentro de divContenido */
+  #divContenido h2 {
+      font-size: 2rem; /* Cambia el tamaño según tus preferencias para un h2 */
+  }

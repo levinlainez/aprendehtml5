@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Juego de ahorcado, hecho por el grupo 5 de Programacion web 2" />
-    <link rel="icon" type="image/png" sizes="96x96" href="src/img/favicon-96x96.png" />
-    <link href="src/style/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon-96x96.png" />
+    <link href="../style/bootstrap.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="src/style/style.css" />
+    <link rel="stylesheet" href="../style/style.css" />
     <title>Curso HTML5</title>
 </head>
 <body>
@@ -36,51 +36,40 @@
                         <div class="card shadow fondo fw-bold" id="agregar">
                             <div class="card-body">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-8 col-sm-12 mb-2 animate__animated animate__fadeInDown animate__delay-2s text-center">
+                                           <div class="col-lg-6 col-md-8 col-sm-12 mb-0 animate__animated animate__fadeInDown animate__delay-2s text-center">
                                         
             <textarea name="" id="" class="w-100" rows="13" readonly>
             
-            &lt;html&gt;
-                &lt;body&gt;
-                    Paso 1
+    &lt;html&gt;
+        &lt;body&gt;
+            Ejercicio 2
 
-                    Los elementos HTML tienen etiquetas de apertura como &lt;h1&gt; y 
-                    etiquetas de cierre como &lt;/h1&gt;.
-                    El texto de un elemento va entre sus etiquetas de aperturas y cierre.
-            
-                    Encuentra el elemento &lt;h1&gt; y cambia su texto a: 
-                    Bienvenido a la clase de HTML5
-                
-            </textarea>
-                                    </div>
-                                    <div class="col-lg-6 col-md-8 col-sm-12 mb-2 animate__animated animate__fadeInDown animate__delay-2s text-center">
-                                        <div class="custom-box" id="divContenido">
-                                            <!-- Aquí puedes colocar el contenido que desees dentro del cuadro -->
-                                        </div>
-                                    </div>
-                                    
-                                   
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-8 col-sm-12 mb-2 animate__animated animate__fadeInDown animate__delay-2s text-center">
-                                        <input type="text" class="form-control custom-border" id="textarea2" value="                  &lt;h1&gt;Hola Mundo&lt;/h1&gt;">
-                                    </div>
-                                    <div class="col-lg-6 col-md-8 col-sm-12 mb-2 animate__animated animate__fadeInDown animate__delay-2s text-center">
-                                        <p id="errorMensaje" style="color: red;"></p>
-                                    </div>
-                                </div>
-                               
-                                
+            Los elementos de encabezado h1 a h6 desempeñan un papel fundamental 
+            al señalar la relevancia del contenido que sigue a continuación. El h1 es el 
+            más importante y el h6 es el menos importante. Por lo tanto, un elemento
+            h2 se considera menos destacado en comparación con un h1.
 
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-8 col-sm-12 mb-2 animate__animated animate__fadeInDown animate__delay-2s text-center">
-                    <textarea name="" id="" class="w-100" rows="3" readonly>       
-                    &lt;/body&gt;
-                &lt;/html&gt;
-                    </textarea>
+            En la estructura de una página, se recomienda utilizar únicamente un 
+            elemento h1, que represente el título principal de la página. 
                     
-                                    </div>
-                                   
+            Debajo del elemento h1, añade un elemento h2 con el siguiente texto: 
+            Tecnico en informatica
+
+            <h1>Bienvenido a la clase de HTML5</h1>
+
+            </textarea>
+            <div class="row">
+                <div class="col-lg-12 col-md-8 col-sm-12 mb-2 animate__animated animate__fadeInDown animate__delay-2s text-center">
+                    <input type="text" class="form-control custom-border" id="textarea2" value="          &lt;">
+                </div>
+                
+            </div>
+            <div class="col-lg-12 col-md-8 col-sm-12 mb-2 animate__animated animate__fadeInDown animate__delay-2s text-center">
+                <textarea name="" id="" class="w-100" rows="3" readonly>       
+                &lt;/body&gt;
+            &lt;/html&gt;
+                </textarea>
+                
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-3 col-md-8 col-sm-12 mb-2 align-middle d-grid">
@@ -91,15 +80,26 @@
     
                                     </div>
                                     <div class="col-lg-3 col-md-8 col-sm-12 mb-2 align-middle d-grid">
-                                        <button class="btn btn-outline-success rounded fw-bold animate__animated animate__bounceIn animate__slow animate__delay-2s" disabled
-                                                id="siguiente">
+                                        <button class="btn btn-outline-primary rounded fw-bold animate__animated animate__bounceIn animate__slow animate__delay-2s" disabled
+                                                id="siguiente" type="submit">
                                                 <i class="fa-solid fa-circle-right"></i> SIGUIENTE
                                         </button>
     
                                     </div>
+                                    <div class="col-lg-6 col-md-8 col-sm-12 mb-2 animate__animated animate__fadeInDown animate__delay-2s text-center">
+                                        <p id="errorMensaje" style="color: red;"></p>
+                                    </div>
 
                                 </div>
-                                
+                                    </div>
+                                    <div class="col-lg-6 col-md-8 col-sm-12 mb-2 animate__animated animate__fadeInDown animate__delay-2s text-center">
+                                        <div class="custom-box" id="divContenido">
+                                            <!-- Aquí puedes colocar el contenido que desees dentro del cuadro -->
+                                        </div>
+                                    </div>
+                                    
+                                   
+                                </div>
                                 <nav aria-label="...">
                                     <ul class="pagination pagination-sm">
                                       <li class="page-item " aria-current="page">
@@ -140,10 +140,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
         crossorigin="anonymous"></script>
-    <script src="src/js/app.js"></script>
+    <script src="../js/pagina2.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
-    <script src="src/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

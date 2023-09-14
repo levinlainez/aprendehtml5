@@ -15,11 +15,18 @@ document.getElementById('verificarBoton').addEventListener('click', function() {
       document.getElementById('siguiente').removeAttribute('disabled');
   } else {
       // Si no existe, mostrar mensaje de error
-      errorMensaje.textContent = 'Error: En el contenido <h1></h1>';
+      errorMensaje.textContent = 'Lo siento, Tu código no cumple los requisitos.';
       // Limpiar el contenido del div
       divContenido.innerHTML = '';
   }
 });
+
+function redireccionarAPaginaSiguiente() {
+  window.location.href = '../src/pages/pagina2.html'; // Cambia el nombre del archivo según tu necesidad
+}
+
+// Agregar un evento de clic al botón "siguiente"
+document.getElementById('siguiente').addEventListener('click', redireccionarAPaginaSiguiente);
 
 
 

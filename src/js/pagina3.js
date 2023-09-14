@@ -1,10 +1,4 @@
-window.onload = function() {
-    // Buscamos el div por su id
-    var divContenido = document.getElementById("divContenido");
 
-    // Cambiamos el contenido del div
-    divContenido.textContent = "Bienvenido a la clase de HTML5";
-};
 
 // Agregar un evento al botón "Verificar"
 document.getElementById('verificarBoton').addEventListener('click', function() {
@@ -13,14 +7,13 @@ document.getElementById('verificarBoton').addEventListener('click', function() {
     var errorMensaje = document.getElementById('errorMensaje');
     
     // Verificar si el contenido del textarea contiene <h2>¡Programar no es fácil, pero tampoco es imposible!</h2>
-    if (textareaContent.includes('<h2>Tecnico en informatica</h2>')) {
+    if (textareaContent.includes('<p>!Programar no es facil, pero tampoco imposible¡</p>')) {
         // Si existe, agregar el contenido al div, manteniendo el contenido anterior
         divContenido.innerHTML += textareaContent;
         // Limpiar el mensaje de error si estaba mostrándose
         errorMensaje.textContent = '';
         // Deshabilitar el botón "Verificar"
         document.getElementById('verificarBoton').setAttribute('disabled', 'true');
-        document.getElementById('siguiente').removeAttribute('disabled');
     } else {
         // Si no existe, mostrar mensaje de error
         errorMensaje.textContent = 'Lo siento, Tu código no cumple los requisitos.';
@@ -28,7 +21,7 @@ document.getElementById('verificarBoton').addEventListener('click', function() {
 });
 
 function redireccionarAPaginaSiguiente() {
-    window.location.href = '../pages/pagina3.html'; // Cambia el nombre del archivo según tu necesidad
+    window.location.href = '../src/pages/pagina4.html'; // Cambia el nombre del archivo según tu necesidad
   }
   
   // Agregar un evento de clic al botón "siguiente"

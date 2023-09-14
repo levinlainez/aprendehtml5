@@ -341,3 +341,6 @@ body::-webkit-scrollbar-thumb {
   #divContenido h2 {
       font-size: 2rem; /* Cambia el tamaño según tus preferencias para un h2 */
   }
+  #divContenido p {
+    font-size: 1rem; /* Puedes ajustar el tamaño según tus preferencias para un párrafo */
+}

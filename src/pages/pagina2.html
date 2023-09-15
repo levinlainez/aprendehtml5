@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Juego de ahorcado, hecho por el grupo 5 de Programacion web 2" />
     <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon-96x96.png" />
-    <link href="../style/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../style/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -16,6 +17,7 @@
     <link rel="stylesheet" href="../style/style.css" />
     <title>Curso HTML5</title>
 </head>
+
 <body>
     <main class="m-lg-4 m-3 p-lg-4 p-3">
         <div class="container">
@@ -36,102 +38,116 @@
                         <div class="card shadow fondo fw-bold" id="agregar">
                             <div class="card-body">
                                 <div class="row">
-                                           <div class="col-lg-6 col-md-8 col-sm-12 mb-0 animate__animated animate__fadeInDown animate__delay-2s text-center">
-                                        
-            <textarea name="" id="" class="w-100" rows="13" readonly>
-            
-    &lt;html&gt;
-        &lt;body&gt;
-            Ejercicio 2
+                                    <div
+                                        class="col-lg-7 col-md-8 col-sm-12 mb-0 animate__animated animate__fadeInDown animate__delay-2s ">
 
-            Los elementos de encabezado h1 a h6 desempeñan un papel fundamental 
-            al señalar la relevancia del contenido que sigue a continuación. El h1 es el 
-            más importante y el h6 es el menos importante. Por lo tanto, un elemento
-            h2 se considera menos destacado en comparación con un h1.
+                                        <div class="">
+                                            <p class="text-left">&lt;html&gt;</p>
+                                            <p class="ms-3"> &lt;body&gt;</p>
+                                            <p class="ms-5">Ejercicio 2</p>
+                                            <p class="margin-parrafo bg-spa border p-3 parrafo">
+                                                Los elementos de encabezado <span>h1</span> a <span>h6</span> desempeñan
+                                                un papel fundamental
+                                                al señalar la relevancia del contenido que sigue a continuación. El
+                                                <span>h1</span> es el
+                                                más importante y el <span>h6</span> es el menos importante. Por lo
+                                                tanto, un elemento
+                                                <span>h2</span> se considera menos destacado en comparación con un
+                                                <span>h1</span>.
 
-            En la estructura de una página, se recomienda utilizar únicamente un 
-            elemento h1, que represente el título principal de la página. 
-                    
-            Debajo del elemento h1, añade un elemento h2 con el siguiente texto: 
-            Tecnico en informatica
+                                                En la estructura de una página, se recomienda utilizar únicamente un
+                                                elemento <span>h1</span>, que represente el título principal de la
+                                                página.
 
-            <h1>Bienvenido a la clase de HTML5</h1>
+                                                Debajo del elemento <span>h1</span>, añade un elemento <span>h2</span>
+                                                con el siguiente texto:
+                                                <span>Tecnico en informatica</span>
 
-            </textarea>
-            <div class="row">
-                <div class="col-lg-12 col-md-8 col-sm-12 mb-2 animate__animated animate__fadeInDown animate__delay-2s text-center">
-                    <input type="text" class="form-control custom-border" id="textarea2" value="          &lt;">
-                </div>
-                
-            </div>
-            <div class="col-lg-12 col-md-8 col-sm-12 mb-2 animate__animated animate__fadeInDown animate__delay-2s text-center">
-                <textarea name="" id="" class="w-100" rows="3" readonly>       
-                &lt;/body&gt;
-            &lt;/html&gt;
-                </textarea>
-                
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-3 col-md-8 col-sm-12 mb-2 align-middle d-grid">
-                                        <button class="btn btn-outline-success rounded fw-bold animate__animated animate__bounceIn animate__slow animate__delay-2s"
-                                                id="verificarBoton">
-                                            <i class="fas fa-play"></i> VERIFICAR
-                                        </button>
-    
-                                    </div>
-                                    <div class="col-lg-3 col-md-8 col-sm-12 mb-2 align-middle d-grid">
-                                        <button class="btn btn-outline-primary rounded fw-bold animate__animated animate__bounceIn animate__slow animate__delay-2s" disabled
-                                                id="siguiente" type="submit">
-                                                <i class="fa-solid fa-circle-right"></i> SIGUIENTE
-                                        </button>
-    
-                                    </div>
-                                    <div class="col-lg-6 col-md-8 col-sm-12 mb-2 animate__animated animate__fadeInDown animate__delay-2s text-center">
-                                        <p id="errorMensaje" style="color: red;"></p>
-                                    </div>
+                                            </p>
+                                        </div>
 
-                                </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-8 col-sm-12 mb-2 animate__animated animate__fadeInDown animate__delay-2s text-center">
-                                        <div class="custom-box" id="divContenido">
-                                            <!-- Aquí puedes colocar el contenido que desees dentro del cuadro -->
+                                        <div class="row">
+                                            <div
+                                                class=" col-md-8 col-sm-12 mb-2  animate__animated animate__fadeInDown animate__delay-2s text-center">
+                                                <textarea class="form-control custom-border margin-input"
+                                                    id="textarea2">&lt;h1&gt;Bienvenido a la clase de HTML5&lt;/h1&gt;</textarea>
+                                            </div>
+
+                                        </div>
+                                        <div
+                                            class="col-lg-12 col-md-8 col-sm-12 mb-2 animate__animated animate__fadeInDown animate__delay-2s">
+                                            <div>
+                                                <p class="ms-3"> &lt;/body&gt;</p>
+                                                <p class="text-left">&lt;/html&gt;</p>
+                                            </div>
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-3 col-md-8 col-sm-12 mb-2 align-middle d-grid">
+                                                <button
+                                                    class="btn btn-outline-success rounded fw-bold animate__animated animate__bounceIn animate__slow animate__delay-2s"
+                                                    id="verificarBoton">
+                                                    <i class="fas fa-play"></i> VERIFICAR
+                                                </button>
+
+                                            </div>
+                                            <div class="col-lg-3 col-md-8 col-sm-12 mb-2 align-middle d-grid">
+                                                <button
+                                                    class="btn btn-outline-primary rounded fw-bold animate__animated animate__bounceIn animate__slow animate__delay-2s"
+                                                    disabled id="siguiente" type="submit">
+                                                    <i class="fa-solid fa-circle-right"></i> SIGUIENTE
+                                                </button>
+
+                                            </div>
+                                            <div
+                                                class="col-lg-6 col-md-8 col-sm-12 mb-2 animate__animated animate__fadeInDown animate__delay-2s text-center">
+                                                <p id="errorMensaje" style="color: red;"></p>
+                                            </div>
+
                                         </div>
                                     </div>
-                                    
-                                   
+                                    <div
+                                        class="col-lg-5 col-md-8 col-sm-12 mb-2 animate__animated animate__fadeInDown animate__delay-2s text-center">
+                                        <div class="custom-box" id="divContenido">
+                                            <h1>Bienvenido a la clase de HTML5</h1>
+                                        </div>
+                                    </div>
+
+
                                 </div>
+
                                 <nav aria-label="...">
                                     <ul class="pagination pagination-sm">
-                                      <li class="page-item " aria-current="page">
-                                        <span class="page-link">1</span>
-                                      </li>
-                                      <li class="page-item active"><a class="page-link" href="pagina2.html">2</a></li>
-                                      <li class="page-item"><a class="page-link" href="pagina3.html">3</a></li>
-                                      <li class="page-item"><a class="page-link" href="pagina2.html">4</a></li>
-                                      <li class="page-item"><a class="page-link" href="pagina3.html">5</a></li>
-                                      <li class="page-item"><a class="page-link" href="pagina2.html">6</a></li>
-                                      <li class="page-item"><a class="page-link" href="pagina3.html">7</a></li>
-                                      <li class="page-item"><a class="page-link" href="pagina2.html">8</a></li>
-                                      <li class="page-item"><a class="page-link" href="pagina3.html">9</a></li>
-                                      <li class="page-item"><a class="page-link" href="pagina2.html">10</a></li>
-                                      <li class="page-item"><a class="page-link" href="pagina3.html">11</a></li>
+                                        <li class="page-item " aria-current="page">
+                                            <span class="page-link">1</span>
+                                        </li>
+                                        <li class="page-item active"><a class="page-link" href="pagina2.html">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="pagina3.html">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="pagina2.html">4</a></li>
+                                        <li class="page-item"><a class="page-link" href="pagina3.html">5</a></li>
+                                        <li class="page-item"><a class="page-link" href="pagina2.html">6</a></li>
+                                        <li class="page-item"><a class="page-link" href="pagina3.html">7</a></li>
+                                        <li class="page-item"><a class="page-link" href="pagina2.html">8</a></li>
+                                        <li class="page-item"><a class="page-link" href="pagina3.html">9</a></li>
+                                        <li class="page-item"><a class="page-link" href="pagina2.html">10</a></li>
+                                        <li class="page-item"><a class="page-link" href="pagina3.html">11</a></li>
                                     </ul>
                                 </nav>
 
-                                  
+
 
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            
+
+
         </div>
 
-      
-          
-        
+
+
+
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
@@ -146,4 +162,5 @@
     <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

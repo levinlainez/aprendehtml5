@@ -5,6 +5,7 @@ document.getElementById('verificarBoton').addEventListener('click', function() {
     var textareaContent = document.getElementById('textarea2').value.trim();
     var divContenido = document.getElementById('divContenido');
     var errorMensaje = document.getElementById('errorMensaje');
+    divContenido.innerHTML = '';
     
     // Verificar si el contenido del textarea contiene <h2>¡Programar no es fácil, pero tampoco es imposible!</h2>
     if (textareaContent.includes('<p>!Programar no es facil, pero tampoco imposible¡</p>')) {

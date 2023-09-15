@@ -321,7 +321,7 @@ body::-webkit-scrollbar-thumb {
 
 
     .custom-border {
-        border-color: red; /* Cambia el color del borde a tu preferencia */
+        border-color: #fff; /* Cambia el color del borde a tu preferencia */
         /* Otros estilos de borde, como ancho y estilo, si es necesario */
     }
    
@@ -330,7 +330,7 @@ body::-webkit-scrollbar-thumb {
         border: 1px solid #ccc;
         padding: 10px;
         height: 440px;
-        font-size: 3.8rem;
+        
     }
 
     #divContenido {
@@ -344,3 +344,60 @@ body::-webkit-scrollbar-thumb {
   #divContenido p {
     font-size: 1rem; /* Puedes ajustar el tamaño según tus preferencias para un párrafo */
 }
+
+.bg-span span {
+  background-color: #ccc;
+  padding: 2px;
+  border-radius: 0.5rem;
+  
+  font-weight: regular;
+}
+
+.parrafo{
+  text-align: justify;
+  font-weight: regular;
+}
+.bg-spa span {
+  background-color: #ccc;
+  padding: 2px 4px ;
+  
+  
+  font-weight: regular;
+}
+
+
+
+@media (min-width: 768px) {
+  .margin-input {
+    margin-left: 47px  !important;
+    font-weight: bold;
+    width: 678px;
+    
+  }
+}
+
+@media (min-width: 768px) {
+  .margin-inpu {
+    margin-left: 47px  !important;
+    font-weight: bold;
+    width: 478px;
+    overflow: hidden;
+    
+  }
+}
+
+@media (min-width: 768px) {
+  .margin-parrafo {
+    margin-left: 47px  !important;
+    font-weight: bold;
+    width: 678px;
+  }
+}
+@media (min-width: 768px) {
+  .margin-parraf {
+    margin-left: 47px  !important;
+    font-weight: bold;
+    width: 578px;
+  }
+}
+

@@ -7,13 +7,13 @@ const headElement = document.head;
 // Crear un elemento link para Bootstrap CSS
 const linkBootstrap = document.createElement("link");
 linkBootstrap.rel = "stylesheet";
-linkBootstrap.href = esPaginaInicio ? "../style/bootstrap.min.css" : "../style/bootstrap.min.css";
+linkBootstrap.href = "../style/bootstrap.min.css";
 headElement.appendChild(linkBootstrap);
 
 // Crear un elemento link para tu estilo personalizado
 const linkCustomStyle = document.createElement("link");
 linkCustomStyle.rel = "stylesheet";
-linkCustomStyle.href = esPaginaInicio ? "../style/style.css" : "../style/style.css";
+linkCustomStyle.href = "../style/style.css";
 headElement.appendChild(linkCustomStyle);
 
 // Crear un elemento meta para X-UA-Compatible
@@ -39,7 +39,7 @@ const linkFavicon = document.createElement("link");
 linkFavicon.rel = "icon";
 linkFavicon.type = "image/png";
 linkFavicon.sizes = "96x96";
-linkFavicon.href = esPaginaInicio ? "../img/favicon-96x96.pngg" : "../img/favicon-96x96.png";
+linkFavicon.href = "../img/favicon-96x96.png";
 headElement.appendChild(linkFavicon);
 
 // Crear un elemento link para Font Awesome CSS

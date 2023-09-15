@@ -333,6 +333,13 @@ body::-webkit-scrollbar-thumb {
         
     }
 
+    .imagen-cat{
+    
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
     #divContenido {
       font-size: 2.5rem;
   }

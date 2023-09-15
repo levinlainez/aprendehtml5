@@ -22,9 +22,7 @@ body{
   background-image: linear-gradient(to bottom, var(--color-siguiente), var(--blanco)100%);
 }
 
-.text-plomo{
-  color: var(--color-plomo);
-}
+
 
 .text-dec{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -37,74 +35,8 @@ body{
   color: var(--color-morado-claro);
 }
 
-.text-purple{
-  color: var(--color-morado-oscuro);
-}
 
-.bg-purple{
-  background-color: var(--color-morado-oscuro);
-  color: var(--color-blanco);
-}
 
-.bg-purple:hover{
-  background-color: var(--color-morado-oscuro2);
-  color: var(--color-blanco);
-}
-
-.ancho-etiqueta {
-  width: 100px;
-}
-
-.ancho-boton {
-  width: 100px;
-}
-
-.contenedor-letras {
-  min-height: 30px;
-}
-
-.contenedor-letras-secreto {
-  min-height: 45px;
-}
-
-.titulo-principal {
-  background: #1f1f1f;
-}
-
-.letra {
-  background: #adb5bd;
-  border-color: #e6e6e6e6;
-  box-shadow: 0 0 #d9d9d9;
-  border-radius: 10px;
-  display: inline-block;
-  height: 40px;
-  width: 35px;
-  text-align: center;
-  margin-left: 2.5px;
-  margin-right: 2.5px;
-  font-size: 25px;    
-}
-
-.espacio {
-  display: inline-block;    
-  width: 30px;    
-}
-
-.letra-gane {
-  background: var(--color-winner);    
-}
-
-.letra-perdida {
-  background: var(--color-lose);
-}
-
-.estilo-imagen {
-  height: 290px;
-}
-
-.borde-morado {
-  border: 1px solid var(--color-morado-oscuro);
-}
 
 .boton{
   font-size: 1.25rem;
@@ -174,85 +106,7 @@ body{
   border-color: #cccccc;
 }
 
-.contenedor-letras-secreto {
-  font-size: 35px;
-}
 
-.error {
-  background-color: var(--color-lose);
-  color: var(--color-blanco);
-  text-align: center;
-  padding: 10px;
-  text-transform: uppercase;
-  font-weight: bold;
-  max-width: 560px;
-  margin: 1rem auto;
-}
-
-.comenzar {
-  background-color: var(--color-blanco);
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-#loaders {
-  text-align: center;
-}
-
-#ocultar{
-  display: none;
-}
-
-#mostrar{
-  display: block;
-}
-
-#spinner {
-  display: none;
-  justify-content: center;
-  padding: 3rem 0;
-}
-
-.sk-chase {
-  width: 40px;
-  height: 40px;
-  position: relative;
-  animation: sk-chase 2.5s infinite linear both;
-}
-  
-.sk-chase-dot {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0; 
-  animation: sk-chase-dot 2.0s infinite ease-in-out both; 
-}
-
-.sk-chase-dot:before {
-  content: '';
-  display: block;
-  width: 25%;
-  height: 25%;
-  background-color: var(--color-azul);
-  border-radius: 100%;
-  animation: sk-chase-dot-before 2.0s infinite ease-in-out both; 
-}
-  
-.sk-chase-dot:nth-child(1) { animation-delay: -1.1s; }
-.sk-chase-dot:nth-child(2) { animation-delay: -1.0s; }
-.sk-chase-dot:nth-child(3) { animation-delay: -0.9s; }
-.sk-chase-dot:nth-child(4) { animation-delay: -0.8s; }
-.sk-chase-dot:nth-child(5) { animation-delay: -0.7s; }
-.sk-chase-dot:nth-child(6) { animation-delay: -0.6s; }
-.sk-chase-dot:nth-child(1):before { animation-delay: -1.1s; }
-.sk-chase-dot:nth-child(2):before { animation-delay: -1.0s; }
-.sk-chase-dot:nth-child(3):before { animation-delay: -0.9s; }
-.sk-chase-dot:nth-child(4):before { animation-delay: -0.8s; }
-.sk-chase-dot:nth-child(5):before { animation-delay: -0.7s; }
-.sk-chase-dot:nth-child(6):before { animation-delay: -0.6s; }
-  
 @keyframes sk-chase {
   100% { transform: rotate(360deg); } 
 }
@@ -269,22 +123,7 @@ body{
   } 
 }
 
-.dos-columnas {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 2rem;
-  padding: 1rem;
-  background-color: darkgrey;
-}
 
-.division{
-  flex: 0 0 calc(33.3% - 1rem);
-}
-
-.margen{
-  margin: -0.1rem 0.7rem 0 0.7rem;
-  padding:0;
-}
 
 body::-webkit-scrollbar {
   width: 15px;              
@@ -300,24 +139,7 @@ body::-webkit-scrollbar-thumb {
   border: 3px solid var(--color-blanco);  
 }
 
-.tabla{
-  overflow-y: scroll;
-  max-height: 350px;
-}
 
-.tabla::-webkit-scrollbar {
-  width: 15px;              
-}
-
-.tabla::-webkit-scrollbar-track {
-  background: var(--color-morado-oscuro);       
-}
-
-.tabla::-webkit-scrollbar-thumb {
-  background-color: var(--color-blanco);    
-  border-radius: 20px;       
-  border: 3px solid var(--color-morado-oscuro);  
-}
 
 
     .custom-border {
@@ -387,7 +209,7 @@ body::-webkit-scrollbar-thumb {
   .margin-inpu {
     margin-left: 47px  !important;
     font-weight: bold;
-    width: 478px;
+    width: 578px;
     overflow: hidden;
     
   }

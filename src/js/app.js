@@ -1,7 +1,7 @@
 // app.js
 // app.js
-import { verificarContenido, verificarContenido2, verificarContenido3, verificarContenido4 } from './verificacion.js';
-import { redireccionarAPaginaDos, redireccionarAPaginaTres, redireccionarAPaginaCuatro, redireccionarAPaginaCinco } from './redireccionar.js';
+import { verificarContenido, verificarContenido2, verificarContenido3, verificarContenido4, verificarContenido5, verificarContenido6 } from './verificacion.js';
+import { redireccionarAPaginaDos, redireccionarAPaginaTres, redireccionarAPaginaCuatro, redireccionarAPaginaCinco, redireccionarAPaginaSeis, redireccionarAPaginaSiete } from './redireccionar.js';
 
 // Verificar si el elemento con el ID 'verificarBoton' existe antes de agregar un evento
 const verificarBoton = document.getElementById('verificarBoton');
@@ -25,6 +25,18 @@ if (verificarBoton3) {
 const verificarBoton4 = document.getElementById('verificarBoton4');
 if (verificarBoton4) {
   verificarBoton4.addEventListener('click', verificarContenido4);
+}
+
+// Verificar si el elemento con el ID 'verificarBoton2' existe antes de agregar un evento
+const verificarBoton5 = document.getElementById('verificarBoton5');
+if (verificarBoton5) {
+  verificarBoton5.addEventListener('click', verificarContenido5);
+}
+
+// Verificar si el elemento con el ID 'verificarBoton2' existe antes de agregar un evento
+const verificarBoton6 = document.getElementById('verificarBoton6');
+if (verificarBoton6) {
+  verificarBoton6.addEventListener('click', verificarContenido6);
 }
 
 // Verificar si el elemento con el ID 'siguiente' existe antes de agregar un evento
@@ -51,5 +63,16 @@ if (siguiente4Boton) {
   siguiente4Boton.addEventListener('click', redireccionarAPaginaCinco);
 }
 
+// Verificar si el elemento con el ID 'siguiente3' existe antes de agregar un evento
+const siguiente5Boton = document.getElementById('siguiente5');
+if (siguiente5Boton) {
+  siguiente5Boton.addEventListener('click', redireccionarAPaginaSeis);
+}
+
+// Verificar si el elemento con el ID 'siguiente3' existe antes de agregar un evento
+const siguiente6Boton = document.getElementById('siguiente6');
+if (siguiente6Boton) {
+  siguiente6Boton.addEventListener('click', redireccionarAPaginaSiete);
+}
 
 

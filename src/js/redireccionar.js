@@ -4,13 +4,21 @@ export function redireccionarAPaginaDos() {
   }
   
   export function redireccionarAPaginaTres() {
-    window.location.href = '/src/pages/pagina3.html';
+    window.location.href = '../pages/pagina5.html';
   }
   
   export function redireccionarAPaginaCuatro() {
-    window.location.href = '../src/pages/pagina4.html';
+    window.location.href = '../pages/pagina5.html';
   }
   
   export function redireccionarAPaginaCinco() {
-    window.location.href = '../src/pages/pagina5.html';
+    window.location.href = '../pages/pagina5.html';
+  }
+
+  export function redireccionarAPaginaSeis() {
+    window.location.href = '../pages/pagina6.html';
+  }
+
+  export function redireccionarAPaginaSiete() {
+    window.location.href = '../pages/pagina6.html';
   }

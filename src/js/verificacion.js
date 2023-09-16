@@ -89,6 +89,104 @@ export function verificarContenido3() {
     }
 }
 
+export function verificarContenido5() {
+  const textareaContent = document.getElementById('textarea2').value;
+  const divContenido = document.getElementById('divContenido');
+  const errorMensaje = document.getElementById('errorMensaje');
+
+  // Extraer la URL de la imagen del código HTML ingresado
+  const matches = textareaContent.match(/src=["'](.*?)["']/);
+  if (matches && matches.length > 1) {
+      const imageUrl = matches[1];
+
+      // Guardar el valor del campo de texto en el almacenamiento local
+      //localStorage.setItem('textoGuardado', textareaContent);
+
+      // Agregar la clase "imagen-cat" al divContenido antes de configurar la imagen de fondo
+      divContenido.classList.add('imagen-cat');
+
+      // Limpiar el contenido anterior del divContenido
+      divContenido.innerHTML = '';
+      errorMensaje.textContent = '';
+
+      // Crear elementos HTML para el h1, la imagen y el p
+      const h1 = document.createElement('h1');
+      h1.textContent = 'Bienvenido a la clase de HTML5';
+
+      const p = document.createElement('p');
+      p.textContent = 'Imagen de gatito';
+
+      const img = document.createElement('img');
+      img.src = imageUrl;
+      img.alt = 'Imagen de gatito';
+
+      // Agregar los elementos creados al divContenido en el orden deseado
+      divContenido.appendChild(h1);
+      divContenido.appendChild(p);
+      divContenido.appendChild(img);
+      document.getElementById('verificarBoton5').setAttribute('disabled', 'true');
+      document.getElementById('siguiente5').removeAttribute('disabled');
+  } else {
+      // Mostrar un mensaje de error si no se encuentra una URL válida en el código HTML
+      divContenido.style.backgroundImage = '';
+      divContenido.classList.remove('imagen-cat'); // Remueve la clase si no se encontró una URL válida
+       // Mostrar un mensaje de error si falta <main> o </main>
+       errorMensaje.textContent = 'No se encontro una imagen.';
+      
+  }
+}
+
+export function verificarContenido6() {
+  const textareaContent = document.getElementById('textarea2').value;
+  const divContenido = document.getElementById('divContenido');
+  const errorMensaje = document.getElementById('errorMensaje');
+
+  // Extraer la URL de la imagen del código HTML ingresado
+  const matches = textareaContent.match(/src=["'](.*?)["']/);
+  if (matches && matches.length > 1) {
+      const imageUrl = matches[1];
+
+      // Buscar la cadena 'alt="Es un gatito"' en el contenido del textarea
+      if (textareaContent.includes('alt="Es un gatito"')) {
+          // Si se encuentra la cadena, continuar con la lógica
+          divContenido.classList.add('imagen-cat');
+          divContenido.innerHTML = '';
+          errorMensaje.textContent = '';
+
+          // Crear elementos HTML para el h1, la imagen y el p
+          const h1 = document.createElement('h1');
+          h1.textContent = 'Bienvenido a la clase de HTML5';
+
+          const p = document.createElement('p');
+          p.textContent = 'Imagen de gatito';
+
+          const img = document.createElement('img');
+          img.src = imageUrl;
+          img.alt = 'Es un gatito';
+
+          // Agregar los elementos creados al divContenido en el orden deseado
+          divContenido.appendChild(h1);
+          divContenido.appendChild(p);
+          divContenido.appendChild(img);
+          document.getElementById('verificarBoton5').setAttribute('disabled', 'true');
+          document.getElementById('siguiente5').removeAttribute('disabled');
+      } else {
+          // Si no se encuentra la cadena 'alt="Es un gatito"', mostrar un mensaje de error
+          divContenido.style.backgroundImage = '';
+          divContenido.classList.remove('imagen-cat');
+          errorMensaje.textContent = 'El atributo alt debe ser "Es un gatito".';
+      }
+  } else {
+      // Mostrar un mensaje de error si no se encuentra una URL válida en el código HTML
+      divContenido.style.backgroundImage = '';
+      divContenido.classList.remove('imagen-cat');
+      errorMensaje.textContent = 'No se encontró una URL de imagen válida en el código HTML ingresado.';
+  }
+}
+
+
+
+
 
 
 

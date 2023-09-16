@@ -230,3 +230,16 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
+.navegacion {
+  color: #222222;
+  font-weight: bold;
+
+}
+
+.navegacion:hover {
+  background-color: #0288d1;
+  color: #ffffff;
+  font-weight: bold;
+  
+}
+

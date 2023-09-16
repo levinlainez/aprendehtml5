@@ -72,15 +72,45 @@ headElement.appendChild(pageTitle);
 
 //header
 const encabezadoTemplate = `
+
 <div class="col">
-<div class="card text-center shadow">
-    <div class="card-body">
-        <h1 class="tw-bold text-dec user-select-none">
-            Curso<i class="fa-solid fa-heart fa-beat" style="--fa-beat-scale: 2.0;"></i>HTML5
-        </h1>
+    <div class="card  shadow">
+        <div class="card-body">
+            <div class="row justify-content-around align-items-center">
+                
+                <div class="col-md-4"> <!-- Columna para el título -->
+                    <img src="../img/logo-FIDE.png" width="100" height="75" alt="Logo FIDE">
+
+                        
+                </div>
+                <div class="col-md-4"> <!-- Columna para el título -->
+                    <h1 class="tw-bold text-dec user-select-none mt-2">
+                        Curso<i class="fa-solid fa-heart fa-beat" style="--fa-beat-scale: 2.0;"></i>HTML5
+                    </h1>
+                </div>
+                <div class="col-md-4" > <!-- Columna para la navegación -->
+                    <nav>
+                        <ul class="nav nav-pills justify-content-end"> <!-- Alinea la navegación a la derecha -->
+                            <li class="nav-item">
+                                <a class="nav-link navegacion" href="#" >Acceso</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navegacion" href="#">Cursos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navegacion" href="#">Estudios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navegacion" href="#">Contacta</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
-</div>
+
 `;
 
 const headerDiv = document.getElementById("header");

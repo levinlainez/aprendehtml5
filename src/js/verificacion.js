@@ -61,7 +61,7 @@ export function verificarContenido3() {
       errorMensaje.textContent = '';
       // Deshabilitar el botón "Verificar"
       document.getElementById('verificarBoton3').setAttribute('disabled', 'true');
-      document.getElementById('siguiente3').setAttribute('disabled', 'true');
+      document.getElementById('siguiente3').setAttribute('disabled');
     } else {
       // Si no existe, mostrar mensaje de error
       errorMensaje.textContent = 'Lo siento, Tu código no cumple los requisitos.';
@@ -77,15 +77,18 @@ export function verificarContenido3() {
     divContenido.innerHTML = '';
     errorMensaje.textContent = '';
 
-    // Verificar si el contenido del textarea contiene <main>
-    if (textareaContent.includes('<main>')) {
+    // Verificar si el contenido del textarea contiene tanto <main> como </main>
+    if (textareaContent.includes('<main>') && textareaContent.includes('</main>')) {
         // Agregar el contenido al div
         divContenido.innerHTML = textareaContent;
+        document.getElementById('verificarBoton4').setAttribute('disabled', 'true');
+        document.getElementById('siguiente4').removeAttribute('disabled');
     } else {
-        // Mostrar un mensaje de error si falta <main>
-        errorMensaje.textContent = 'El contenido debe contener la etiqueta <main>.';
+        // Mostrar un mensaje de error si falta <main> o </main>
+        errorMensaje.textContent = 'El contenido debe contener tanto la etiqueta <main> como </main>.';
     }
 }
+
 
 
 

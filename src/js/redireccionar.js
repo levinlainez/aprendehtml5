@@ -11,3 +11,6 @@ export function redireccionarAPaginaDos() {
     window.location.href = '../src/pages/pagina4.html';
   }
   
+  export function redireccionarAPaginaCinco() {
+    window.location.href = '../src/pages/pagina5.html';
+  }

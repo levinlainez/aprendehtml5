@@ -61,10 +61,32 @@ export function verificarContenido3() {
       errorMensaje.textContent = '';
       // Deshabilitar el botón "Verificar"
       document.getElementById('verificarBoton3').setAttribute('disabled', 'true');
-      document.getElementById('siguiente').setAttribute('disabled', 'true');
+      document.getElementById('siguiente3').setAttribute('disabled', 'true');
     } else {
       // Si no existe, mostrar mensaje de error
       errorMensaje.textContent = 'Lo siento, Tu código no cumple los requisitos.';
     }
   }
   
+  export function verificarContenido4() {
+    const textareaContent = document.getElementById('textarea2').value;
+    const divContenido = document.getElementById('divContenido');
+    const errorMensaje = document.getElementById('errorMensaje');
+
+    // Limpiar contenido actual del div y el mensaje de error
+    divContenido.innerHTML = '';
+    errorMensaje.textContent = '';
+
+    // Verificar si el contenido del textarea contiene <main>
+    if (textareaContent.includes('<main>')) {
+        // Agregar el contenido al div
+        divContenido.innerHTML = textareaContent;
+    } else {
+        // Mostrar un mensaje de error si falta <main>
+        errorMensaje.textContent = 'El contenido debe contener la etiqueta <main>.';
+    }
+}
+
+
+
+

@@ -5,7 +5,7 @@ export function verificarContenido() {
     const errorMensaje = document.getElementById('errorMensaje');
     
     // Lógica de verificación aquí
-    if (textareaContent.includes('<h1>Bienvenido a la clase de HTML5</h1>')) {
+    if (textareaContent.includes('<h1>Curso de HTML5</h1>')) {
       // Si existe, agregar el contenido al div
       divContenido.innerHTML = textareaContent;
       // Limpiar el mensaje de error si estaba mostrándose
@@ -111,7 +111,7 @@ export function verificarContenido5() {
 
       // Crear elementos HTML para el h1, la imagen y el p
       const h1 = document.createElement('h1');
-      h1.textContent = 'Bienvenido a la clase de HTML5';
+      h1.textContent = 'Curso de HTML5';
 
       const p = document.createElement('p');
       p.textContent = 'Imagen de gatito';
@@ -155,7 +155,7 @@ export function verificarContenido6() {
 
           // Crear elementos HTML para el h1, la imagen y el p
           const h1 = document.createElement('h1');
-          h1.textContent = 'Bienvenido a la clase de HTML5';
+          h1.textContent = 'Curso de HTML5';
 
           const p = document.createElement('p');
           p.textContent = 'Imagen de gatito';

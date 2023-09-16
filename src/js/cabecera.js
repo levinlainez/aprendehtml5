@@ -78,13 +78,13 @@ const encabezadoTemplate = `
         <div class="card-body">
             <div class="row justify-content-around align-items-center">
                 
-                <div class="col-md-4"> <!-- Columna para el título -->
+                <div class="col-md-4  d-none d-md-block "> <!-- Columna para el título -->
                     <img src="../img/logo-FIDE.png" width="100" height="75" alt="Logo FIDE">
 
                         
                 </div>
                 <div class="col-md-4"> <!-- Columna para el título -->
-                    <h1 class="tw-bold text-dec user-select-none mt-2">
+                    <h1 class="tw-bold text-dec user-select-none mt-2 centrar-imagen">
                         Curso<i class="fa-solid fa-heart fa-beat" style="--fa-beat-scale: 2.0;"></i>HTML5
                     </h1>
                 </div>

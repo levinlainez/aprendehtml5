@@ -15,14 +15,12 @@
                     <div class="card  shadow">
                         <div class="card-body">
                             <div class="row justify-content-around align-items-center">
-
-                                <div class="col-md-4"> <!-- Columna para el título -->
+                                <div class="col-md-4 d-none d-md-block "> <!-- Columna para el título -->
                                     <img src="src/img/logo-FIDE.png" width="100" height="75" alt="Logo FIDE">
                                 </div>
-                                <div class="col-md-4"> <!-- Columna para el título -->
-                                    <h1 class="tw-bold text-dec user-select-none mt-2">
-                                        Curso<i class="fa-solid fa-heart fa-beat"
-                                            style="--fa-beat-scale: 2.0;"></i>HTML5
+                                <div class="col-md-4"> <!-- Columna para el título (oculta en pantallas más pequeñas) -->
+                                    <h1 class="tw-bold text-dec user-select-none mt-2 centrar-imagen">
+                                        Curso<i class="fa-solid fa-heart fa-beat" style="--fa-beat-scale: 2.0;"></i>HTML5
                                     </h1>
                                 </div>
                                 <div class="col-md-4"> <!-- Columna para la navegación -->
@@ -45,6 +43,7 @@
                                     </nav>
                                 </div>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -52,40 +51,41 @@
             <div id="mostrar">
                 <div class="row mb-4 animate__animated animate__backInLeft animate__delay-1s">
                     <div class="col">
-                        <div class="card shadow fondo fw-bold" id="agregar">
+                        <div class="card shadow fondo " id="agregar">
                             <div class="card-body">
                                 <div class="row">
                                     <div
                                         class="col-lg-7 col-md-8 col-sm-12 mb-0 animate__animated animate__fadeInDown animate__delay-2s ">
-
+                                        <div class="scrollable-div">
                                         <div class="">
-                                            <p class="text-left">&lt;html&gt;</p>
-                                            <p class="ms-3"> &lt;body&gt;</p>
-                                            <p class="ms-5">Ejercicio 1</p>
+                                            <p class="text-left  projos">&lt;html&gt;</p>
+                                            <p class="ms-3 projos"> &lt;body&gt;</p>
+                                            <p class="ms-5 ejercicio">Ejercicio 1</p>
                                             <p class="margin-parrafo bg-spa border p-3 parrafo">
                                                 Los elementos HTML constan de etiquetas de apertura como
                                                 <span>&lt;h1&gt;.</span> y
                                                 etiquetas de cierre, como <span>&lt;/h1&gt;.</span>
                                                 El Contenido de un elemento se encuenta entre sus etiquetas de
                                                 aperturas y cierre.
+                                                <br>
                                                 Para cambiar el texto de un elemento <span>&lt;h1&gt;</span>,
                                                 simplemente busca
                                                 la etiqueta <span>&lt;h1&gt;</span> y modifica su contenido a:
-                                                <span>Bienvenido a la clase de HTML5</span>
+                                                <span>Curso de HTML5</span>
                                             </p>
                                         </div>
                                         <div class="row">
                                             <div
-                                                class=" col-md-8 col-sm-12 mb-2  animate__animated animate__fadeInDown animate__delay-2s text-center">
-                                                <input type="text" class="form-control custom-border margin-input"
+                                                class=" col-md-8 col-sm-12 mb-2  animate__animated animate__fadeInDown animate__delay-2s ">
+                                                <input type="text" class="form-control custom-border margin-input "
                                                     id="textarea2" value="&lt;h1&gt;Hola Mundo&lt;/h1&gt;">
                                             </div>
                                         </div>
                                         <div
                                             class="col-lg-12 col-md-8 col-sm-12 mb-2 animate__animated animate__fadeInDown animate__delay-2s">
                                             <div>
-                                                <p class="ms-3"> &lt;/body&gt;</p>
-                                                <p class="text-left">&lt;/html&gt;</p>
+                                                <p class="ms-3 projos"> &lt;/body&gt;</p>
+                                                <p class="text-left projos">&lt;/html&gt;</p>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -111,8 +111,9 @@
 
                                         </div>
                                     </div>
+                                </div>
                                     <div
-                                        class="col-lg-5 col-md-8 col-sm-12 mb-2 animate__animated animate__fadeInDown animate__delay-2s text-center">
+                                        class="col-lg-5 col-md-8 col-sm-12 mb-2 animate__animated animate__fadeInDown animate__delay-2s ">
                                         <div class="custom-box" id="divContenido">
                                             <h1>Hola Mundo!</h1>
                                         </div>

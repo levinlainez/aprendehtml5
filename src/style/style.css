@@ -153,7 +153,7 @@ body::-webkit-scrollbar-thumb {
         background-color: #f0f0f0;
         border: 1px solid #ccc;
         padding: 10px;
-        height: 440px;
+        height: 500px;
         
     }
 
@@ -257,7 +257,7 @@ body::-webkit-scrollbar-thumb {
   
 }
 .scrollable-div {
-  max-height: 400px; /* Altura máxima del contenedor con scroll */
+  max-height: 500px; /* Altura máxima del contenedor con scroll */
   overflow-y: auto; /* Habilita el desplazamiento vertical */
   overflow-x: hidden; /* Oculta el desplazamiento horizontal */
   /* Otros estilos personalizados según sea necesario */
@@ -265,10 +265,34 @@ body::-webkit-scrollbar-thumb {
 
 @media (max-width: 768px) {
   .centrar-imagen {
-    text-align: center;
+    text-align: center!important;
    
     
   }
 }
 
+/* CSS personalizado para el color rojo */
+.nav-item-blue {
+  background-color: blue; /* Cambia el color del texto a rojo */
+  color:white;
+}
+
+
+.page-item.active a.page-link {
+  background-color: blue;
+  color: white; /* Cambia el color del texto para que sea legible */
+}
+
+/* Agrega estilos para dispositivos pequeños */
+@media (max-width: 767px) {
+  .pagination-responsive {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  
+  .pagination-responsive .page-item {
+      margin: 5px;
+  }
+}
 

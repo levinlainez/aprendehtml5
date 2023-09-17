@@ -20,5 +20,9 @@ export function redireccionarAPaginaDos() {
   }
 
   export function redireccionarAPaginaSiete() {
-    window.location.href = '../pages/pagina6.html';
+    window.location.href = '../pages/pagina7.html';
+  }
+
+  export function redireccionarAPaginaOcho() {
+    window.location.href = '../pages/pagina8.html';
   }

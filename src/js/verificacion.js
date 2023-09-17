@@ -1,6 +1,6 @@
 // verificacion.js
 export function verificarContenido() {
-  const textareaContent = document.getElementById('textarea2').value.trim();
+  const textareaContent = document.getElementById('textareapage1').value.trim();
   const divContenido = document.getElementById('divContenido');
   const errorMensaje = document.getElementById('errorMensaje');
 
@@ -18,6 +18,8 @@ export function verificarContenido() {
     // Guardar el estado en localStorage
     
     localStorage.setItem('navItemRed1', 'true');
+    localStorage.setItem('textpage1', textareaContent);
+    
   } else {
     
     errorMensaje.textContent = 'Lo siento, Tu código no cumple los requisitos.';
@@ -26,13 +28,14 @@ export function verificarContenido() {
 
     // Eliminar el estado de localStorage
     localStorage.removeItem('navItemRed1'); // Debes usar la misma clave que usaste para guardar
+    localStorage.removeItem('textpage1');
   }
 }
 
 
  
 export function verificarContenido2() {
-  const textareaContent = document.getElementById('textarea2').value.trim();
+  const textareaContent = document.getElementById('textareapage2').value.trim();
   const divContenido = document.getElementById('divContenido');
   const errorMensaje = document.getElementById('errorMensaje');
 
@@ -51,6 +54,8 @@ export function verificarContenido2() {
 
     // Guardar el estado en localStorage
     localStorage.setItem('navItemRed2', 'true');
+    localStorage.setItem('textpage2', textareaContent);
+    
   } else {
     
     // Si no existe, mostrar mensaje de error
@@ -58,13 +63,15 @@ export function verificarContenido2() {
 
     // Eliminar el estado de localStorage
     localStorage.removeItem('navItemRed2');
+    localStorage.removeItem('textpage2');
+    
   }
 }
 
   
 
 export function verificarContenido3() {
-  const textareaContent = document.getElementById('textarea2').value.trim();
+  const textareaContent = document.getElementById('textareapage3').value.trim();
   const divContenido = document.getElementById('divContenido');
   const errorMensaje = document.getElementById('errorMensaje');
   divContenido.innerHTML = '';
@@ -75,14 +82,13 @@ export function verificarContenido3() {
       divContenido.innerHTML += textareaContent;
       // Limpiar el mensaje de error si estaba mostrándose
       errorMensaje.textContent = '';
-      // Deshabilitar el botón "Verificar"
-      document.getElementById('verificarBoton3').setAttribute('disabled', 'true');
-      document.getElementById('siguiente3').setAttribute('disabled');
+      
 
       
 
       // Guardar el estado en localStorage
       localStorage.setItem('navItemRed3', 'true');
+      localStorage.setItem('textpage3', textareaContent);
   } else {
       
       // Si no existe, mostrar mensaje de error
@@ -90,12 +96,13 @@ export function verificarContenido3() {
 
       // Eliminar el estado de localStorage
       localStorage.removeItem('navItemRed3');
+      localStorage.removeItem('textpage3');
   }
 }
 
   
   export function verificarContenido4() {
-    const textareaContent = document.getElementById('textarea2').value;
+    const textareaContent = document.getElementById('textareapage4').value;
     const divContenido = document.getElementById('divContenido');
     const errorMensaje = document.getElementById('errorMensaje');
 
@@ -109,21 +116,21 @@ export function verificarContenido3() {
         divContenido.innerHTML = textareaContent;
         document.getElementById('verificarBoton4').setAttribute('disabled', 'true');
         document.getElementById('siguiente4').removeAttribute('disabled');
-        // Agregar la clase 'nav-item-red' al elemento de navegación
-        const navItem = document.querySelector('.page-item a[href="pagina4.html"]');
-        navItem.classList.add('nav-item-red');
+        
         // Guardar el estado en localStorage
         localStorage.setItem('navItemRed4', 'true');
+        localStorage.setItem('textpage4', textareaContent);
     } else {
         
         // Eliminar el estado de localStorage
         localStorage.removeItem('navItemRed4');
+        localStorage.removeItem('textpage4');
         errorMensaje.textContent = 'El contenido debe contener tanto la etiqueta <main> como </main>.';
     }
 }
 
 export function verificarContenido5() {
-  const textareaContent = document.getElementById('textarea2').value;
+  const textareaContent = document.getElementById('textareapage5').value;
   const divContenido = document.getElementById('divContenido');
   const errorMensaje = document.getElementById('errorMensaje');
 
@@ -157,15 +164,16 @@ export function verificarContenido5() {
       divContenido.appendChild(h1);
       divContenido.appendChild(p);
       divContenido.appendChild(img);
-      document.getElementById('verificarBoton5').setAttribute('disabled', 'true');
-      document.getElementById('siguiente5').removeAttribute('disabled');
+      
       
         // Guardar el estado en localStorage
       localStorage.setItem('navItemRed5', 'true');
+      localStorage.setItem('textpage5', textareaContent);
   } else {
       
       // Eliminar el estado de localStorage
       localStorage.removeItem('navItemRed5');
+      localStorage.removeItem('textpage5');
       // Mostrar un mensaje de error si no se encuentra una URL válida en el código HTML
       divContenido.style.backgroundImage = '';
       divContenido.classList.remove('imagen-cat'); // Remueve la clase si no se encontró una URL válida
@@ -176,7 +184,7 @@ export function verificarContenido5() {
 }
 
 export function verificarContenido6() {
-  const textareaContent = document.getElementById('textarea2').value;
+  const textareaContent = document.getElementById('textareapage6').value;
   const divContenido = document.getElementById('divContenido');
   const errorMensaje = document.getElementById('errorMensaje');
 
@@ -207,11 +215,10 @@ export function verificarContenido6() {
           divContenido.appendChild(h1);
           divContenido.appendChild(p);
           divContenido.appendChild(img);
-          document.getElementById('verificarBoton6').setAttribute('disabled', 'true');
-          document.getElementById('siguiente6').removeAttribute('disabled');
           
             // Guardar el estado en localStorage
           localStorage.setItem('navItemRed6', 'true');
+          localStorage.setItem('textpage6', textareaContent);
       } else {
           // Si no se encuentra la cadena 'alt="Es un gatito"', mostrar un mensaje de error
           
@@ -219,6 +226,7 @@ export function verificarContenido6() {
           
           // Eliminar el estado de localStorage
           localStorage.removeItem('navItemRed6');
+          localStorage.removeItem('textpage6');
       }
   } else {
       // Mostrar un mensaje de error si no se encuentra una URL válida en el código HTML
@@ -228,7 +236,63 @@ export function verificarContenido6() {
 }
 
 export function verificarContenido7() {
-  const textareaContent = document.getElementById('textarea2').value;
+  const textareaContent = document.getElementById('textareapage7').value;
+  const divContenido = document.getElementById('divContenido');
+  const errorMensaje = document.getElementById('errorMensaje');
+
+  // Extraer la URL de la imagen del código HTML ingresado
+  const matches = textareaContent.match(/src=["'](.*?)["']/);
+  if (matches && matches.length > 1) {
+      const imageUrl = matches[1];
+
+      // Buscar la cadena 'alt="Es un gatito"' en el contenido del textarea
+      if (textareaContent.includes('<a href="https://www.mundogatos.com/"></a>')) {
+          // Si se encuentra la cadena, continuar con la lógica
+          divContenido.classList.add('imagen-cat');
+          divContenido.innerHTML = '';
+          errorMensaje.textContent = '';
+
+          // Crear elementos HTML para el h1, la imagen y el p
+          const h1 = document.createElement('h1');
+          h1.textContent = 'MiauMundo';
+          const h2 = document.createElement('h2');
+          h2.textContent = 'Foto de Gatitos';
+
+          const p = document.createElement('p');
+          p.textContent = 'Mira más fotos de gatos en nuestra galería.';
+
+          const img = document.createElement('img');
+          img.src = imageUrl;
+          img.alt = 'Es un gatito';
+
+          
+          // Agregar los elementos creados al divContenido en el orden deseado
+          divContenido.appendChild(h1);
+          divContenido.appendChild(h2);
+          divContenido.appendChild(p);
+          divContenido.appendChild(img);
+          
+          
+            // Guardar el estado en localStorage
+          localStorage.setItem('navItemRed7', 'true');
+          localStorage.setItem('textpage7', textareaContent);
+      } else {
+          
+          // Eliminar el estado de localStorage
+          localStorage.removeItem('navItemRed7');
+          localStorage.removeItem('textpage7');
+      
+          errorMensaje.textContent = 'ELo siento, Tu código no cumple los requisitos.';
+      }
+  } else {
+      // Mostrar un mensaje de error si no se encuentra una URL válida en el código HTML
+      
+      errorMensaje.textContent = 'No se encontró una URL de imagen válida en el código HTML ingresado.';
+  }
+}
+
+export function verificarContenido8() {
+  const textareaContent = document.getElementById('textareapage8').value;
   const divContenido = document.getElementById('divContenido');
   const errorMensaje = document.getElementById('errorMensaje');
 
@@ -270,15 +334,14 @@ export function verificarContenido7() {
           divContenido.appendChild(img);
           divContenido.appendChild(a);
           
-          document.getElementById('verificarBoton7').setAttribute('disabled', 'true');
-          document.getElementById('siguiente7').removeAttribute('disabled');
-          
             // Guardar el estado en localStorage
-          localStorage.setItem('navItemRed7', 'true');
+          localStorage.setItem('navItemRed8', 'true');
+          localStorage.setItem('textpage8', textareaContent);
       } else {
           
           // Eliminar el estado de localStorage
-          localStorage.removeItem('navItemRed7');
+          localStorage.removeItem('navItemRed8');
+          localStorage.removeItem('textpage8');
       
           errorMensaje.textContent = 'ELo siento, Tu código no cumple los requisitos.';
       }

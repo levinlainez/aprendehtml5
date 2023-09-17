@@ -141,6 +141,8 @@ for (let i = 1; i <= totalPaginas; i++) {
     navTemplate.innerHTML = "";
   }
 }
+  
+  
 
 
 //footer
@@ -162,6 +164,8 @@ const footerTemplate = `
 
 const footerDiv = document.getElementById("footer");
 footerDiv.innerHTML = footerTemplate;
+
+
 
 
 

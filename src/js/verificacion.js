@@ -19,16 +19,33 @@ export function verificarContenido() {
     
     localStorage.setItem('navItemRed1', 'true');
     localStorage.setItem('textpage1', textareaContent);
+
+    Swal.fire({
+      title: '¡Felicidades!',
+      text: 'Felicidades, su código ha sido aprobado',
+      icon: 'success', // Puedes cambiar el icono a 'info', 'warning', 'error', etc.
+      confirmButtonText: 'Aceptar'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        // Realizar acciones adicionales si es necesario
+      }
+    });
     
   } else {
     
-    errorMensaje.textContent = 'Lo siento, Tu código no cumple los requisitos.';
-    // Limpiar el contenido del div
-    divContenido.innerHTML = '';
-
     // Eliminar el estado de localStorage
     localStorage.removeItem('navItemRed1'); // Debes usar la misma clave que usaste para guardar
     localStorage.removeItem('textpage1');
+    Swal.fire({
+      title: 'Error!',
+      text: 'Lo siento, Tu código no cumple los requisitos.',
+      icon: 'error', // Puedes cambiar el icono a 'info', 'warning', 'error', etc.
+      confirmButtonText: 'Aceptar'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        // Realizar acciones adicionales si es necesario
+      }
+    });
   }
 }
 
@@ -55,15 +72,32 @@ export function verificarContenido2() {
     // Guardar el estado en localStorage
     localStorage.setItem('navItemRed2', 'true');
     localStorage.setItem('textpage2', textareaContent);
+    Swal.fire({
+      title: '¡Felicidades!',
+      text: 'Felicidades, su código ha sido aprobado',
+      icon: 'success', // Puedes cambiar el icono a 'info', 'warning', 'error', etc.
+      confirmButtonText: 'Aceptar'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        // Realizar acciones adicionales si es necesario
+      }
+    });
     
   } else {
-    
-    // Si no existe, mostrar mensaje de error
-    errorMensaje.textContent = 'Lo siento, Tu código no cumple los requisitos.';
-
     // Eliminar el estado de localStorage
     localStorage.removeItem('navItemRed2');
     localStorage.removeItem('textpage2');
+
+    Swal.fire({
+      title: 'Error!',
+      text: 'Lo siento, Tu código no cumple los requisitos.',
+      icon: 'error', // Puedes cambiar el icono a 'info', 'warning', 'error', etc.
+      confirmButtonText: 'Aceptar'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        // Realizar acciones adicionales si es necesario
+      }
+    });
     
   }
 }
@@ -89,14 +123,34 @@ export function verificarContenido3() {
       // Guardar el estado en localStorage
       localStorage.setItem('navItemRed3', 'true');
       localStorage.setItem('textpage3', textareaContent);
+      Swal.fire({
+        title: '¡Felicidades!',
+        text: 'Felicidades, su código ha sido aprobado',
+        icon: 'success', // Puedes cambiar el icono a 'info', 'warning', 'error', etc.
+        confirmButtonText: 'Aceptar'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          // Realizar acciones adicionales si es necesario
+        }
+      });
   } else {
       
-      // Si no existe, mostrar mensaje de error
-      errorMensaje.textContent = 'Lo siento, Tu código no cumple los requisitos.';
+      
 
       // Eliminar el estado de localStorage
       localStorage.removeItem('navItemRed3');
       localStorage.removeItem('textpage3');
+
+      Swal.fire({
+        title: 'Error!',
+        text: 'Lo siento, Tu código no cumple los requisitos.',
+        icon: 'error', // Puedes cambiar el icono a 'info', 'warning', 'error', etc.
+        confirmButtonText: 'Aceptar'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          // Realizar acciones adicionales si es necesario
+        }
+      });
   }
 }
 
@@ -120,12 +174,32 @@ export function verificarContenido3() {
         // Guardar el estado en localStorage
         localStorage.setItem('navItemRed4', 'true');
         localStorage.setItem('textpage4', textareaContent);
+        Swal.fire({
+          title: '¡Felicidades!',
+          text: 'Felicidades, su código ha sido aprobado',
+          icon: 'success', // Puedes cambiar el icono a 'info', 'warning', 'error', etc.
+          confirmButtonText: 'Aceptar'
+        }).then((result) => {
+          if (result.isConfirmed) {
+            // Realizar acciones adicionales si es necesario
+          }
+        });
     } else {
         
         // Eliminar el estado de localStorage
         localStorage.removeItem('navItemRed4');
         localStorage.removeItem('textpage4');
-        errorMensaje.textContent = 'El contenido debe contener tanto la etiqueta <main> como </main>.';
+        Swal.fire({
+          title: 'Error!',
+          text: 'El contenido debe contener tanto la etiqueta <main> como </main>.',
+          icon: 'error', // Puedes cambiar el icono a 'info', 'warning', 'error', etc.
+          confirmButtonText: 'Aceptar'
+        }).then((result) => {
+          if (result.isConfirmed) {
+            // Realizar acciones adicionales si es necesario
+          }
+        });
+        
     }
 }
 
@@ -169,6 +243,16 @@ export function verificarContenido5() {
         // Guardar el estado en localStorage
       localStorage.setItem('navItemRed5', 'true');
       localStorage.setItem('textpage5', textareaContent);
+      Swal.fire({
+        title: '¡Felicidades!',
+        text: 'Felicidades, su código ha sido aprobado',
+        icon: 'success', // Puedes cambiar el icono a 'info', 'warning', 'error', etc.
+        confirmButtonText: 'Aceptar'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          // Realizar acciones adicionales si es necesario
+        }
+      });
   } else {
       
       // Eliminar el estado de localStorage
@@ -178,7 +262,18 @@ export function verificarContenido5() {
       divContenido.style.backgroundImage = '';
       divContenido.classList.remove('imagen-cat'); // Remueve la clase si no se encontró una URL válida
        // Mostrar un mensaje de error si falta <main> o </main>
-       errorMensaje.textContent = 'No se encontro una imagen.';
+       
+
+       Swal.fire({
+        title: 'Error!',
+        text: 'No se encontró una imagen válida',
+        icon: 'error', // Puedes cambiar el icono a 'info', 'warning', 'error', etc.
+        confirmButtonText: 'Aceptar'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          // Realizar acciones adicionales si es necesario
+        }
+      });
       
   }
 }
@@ -219,10 +314,31 @@ export function verificarContenido6() {
             // Guardar el estado en localStorage
           localStorage.setItem('navItemRed6', 'true');
           localStorage.setItem('textpage6', textareaContent);
+          Swal.fire({
+            title: '¡Felicidades!',
+            text: 'Felicidades, su código ha sido aprobado',
+            icon: 'success', // Puedes cambiar el icono a 'info', 'warning', 'error', etc.
+            confirmButtonText: 'Aceptar'
+          }).then((result) => {
+            if (result.isConfirmed) {
+              // Realizar acciones adicionales si es necesario
+            }
+          });
       } else {
           // Si no se encuentra la cadena 'alt="Es un gatito"', mostrar un mensaje de error
+
+          Swal.fire({
+            title: 'Error!',
+            text: 'El atributo alt debe ser "Es un gatito".',
+            icon: 'error', // Puedes cambiar el icono a 'info', 'warning', 'error', etc.
+            confirmButtonText: 'Aceptar'
+          }).then((result) => {
+            if (result.isConfirmed) {
+              // Realizar acciones adicionales si es necesario
+            }
+          });
           
-          errorMensaje.textContent = 'El atributo alt debe ser "Es un gatito".';
+          
           
           // Eliminar el estado de localStorage
           localStorage.removeItem('navItemRed6');
@@ -231,7 +347,16 @@ export function verificarContenido6() {
   } else {
       // Mostrar un mensaje de error si no se encuentra una URL válida en el código HTML
       
-      errorMensaje.textContent = 'No se encontró una URL de imagen válida en el código HTML ingresado.';
+      Swal.fire({
+        title: 'Error!',
+        text: 'No se encontró una URL de imagen válida',
+        icon: 'error', // Puedes cambiar el icono a 'info', 'warning', 'error', etc.
+        confirmButtonText: 'Aceptar'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          // Realizar acciones adicionales si es necesario
+        }
+      });
   }
 }
 
@@ -276,18 +401,44 @@ export function verificarContenido7() {
             // Guardar el estado en localStorage
           localStorage.setItem('navItemRed7', 'true');
           localStorage.setItem('textpage7', textareaContent);
+          Swal.fire({
+            title: '¡Felicidades!',
+            text: 'Felicidades, su código ha sido aprobado',
+            icon: 'success', // Puedes cambiar el icono a 'info', 'warning', 'error', etc.
+            confirmButtonText: 'Aceptar'
+          }).then((result) => {
+            if (result.isConfirmed) {
+              // Realizar acciones adicionales si es necesario
+            }
+          });
       } else {
           
           // Eliminar el estado de localStorage
           localStorage.removeItem('navItemRed7');
           localStorage.removeItem('textpage7');
       
-          errorMensaje.textContent = 'ELo siento, Tu código no cumple los requisitos.';
+          Swal.fire({
+            title: 'Error!',
+            text: 'Lo siento, Tu código no cumple los requisitos',
+            icon: 'error', // Puedes cambiar el icono a 'info', 'warning', 'error', etc.
+            confirmButtonText: 'Aceptar'
+          }).then((result) => {
+            if (result.isConfirmed) {
+              // Realizar acciones adicionales si es necesario
+            }
+          });
       }
   } else {
-      // Mostrar un mensaje de error si no se encuentra una URL válida en el código HTML
-      
-      errorMensaje.textContent = 'No se encontró una URL de imagen válida en el código HTML ingresado.';
+    Swal.fire({
+      title: 'Error!',
+      text: 'No se encontró una URL de imagen válida',
+      icon: 'error', // Puedes cambiar el icono a 'info', 'warning', 'error', etc.
+      confirmButtonText: 'Aceptar'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        // Realizar acciones adicionales si es necesario
+      }
+    });
   }
 }
 
@@ -337,35 +488,70 @@ export function verificarContenido8() {
             // Guardar el estado en localStorage
           localStorage.setItem('navItemRed8', 'true');
           localStorage.setItem('textpage8', textareaContent);
+          // Mostrar el cuadro de diálogo SweetAlert2
+          Swal.fire({
+            title: '¡Felicidades!',
+            text: 'Felicidades, su código ha sido aprobado',
+            icon: 'success', // Puedes cambiar el icono a 'info', 'warning', 'error', etc.
+            confirmButtonText: 'Aceptar'
+          }).then((result) => {
+            if (result.isConfirmed) {
+              // Realizar acciones adicionales si es necesario
+            }
+          });
       } else {
           
           // Eliminar el estado de localStorage
           localStorage.removeItem('navItemRed8');
           localStorage.removeItem('textpage8');
       
-          errorMensaje.textContent = 'ELo siento, Tu código no cumple los requisitos.';
+          Swal.fire({
+            title: 'Error!',
+            text: 'Lo siento, Tu código no cumple los requisitos',
+            icon: 'error', // Puedes cambiar el icono a 'info', 'warning', 'error', etc.
+            confirmButtonText: 'Aceptar'
+          }).then((result) => {
+            if (result.isConfirmed) {
+              // Realizar acciones adicionales si es necesario
+            }
+          });
       }
   } else {
       // Mostrar un mensaje de error si no se encuentra una URL válida en el código HTML
+      Swal.fire({
+        title: 'Error!',
+        text: 'No se encontró una URL de imagen válida',
+        icon: 'error', // Puedes cambiar el icono a 'info', 'warning', 'error', etc.
+        confirmButtonText: 'Aceptar'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          // Realizar acciones adicionales si es necesario
+        }
+      });
       
-      errorMensaje.textContent = 'No se encontró una URL de imagen válida en el código HTML ingresado.';
+     
   }
 }
+
+
+
+
+
+
 
 export function verificarContenido9() {
   const textareaContent = document.getElementById('textareapage9').value;
   const divContenido = document.getElementById('divContenido');
   const errorMensaje = document.getElementById('errorMensaje');
 
-  // Extraer la URL de la imagen del código HTML ingresado
-  const matches = textareaContent.match(/src=["'](.*?)["']/);
-  if (matches && matches.length > 1) {
-    const imageUrl = matches[1];
+  // Verificar si el contenido del textarea contiene el texto específico
+  if (textareaContent.includes('<p><a href="https://www.mundogatos.com/">Mira mas fotos</a> de gatos en nuestra galeria.</p>')) {
+    // Extraer la URL de la imagen del código HTML ingresado
+    const matches = textareaContent.match(/src=["'](.*?)["']/);
+    if (matches && matches.length > 1) {
+      const imageUrl = matches[1];
 
-    // Buscar la cadena 'Mira mas fotos' en el contenido del textarea
-    const index = textareaContent.indexOf('Mira mas fotos');
-    if (index !== -1) {
-      // Si se encuentra la cadena, continuar con la lógica
+      // Continuar con la lógica
       divContenido.classList.add('imagen-cat');
       divContenido.innerHTML = '';
       errorMensaje.textContent = '';
@@ -404,7 +590,7 @@ export function verificarContenido9() {
         confirmButtonText: 'Aceptar'
       }).then((result) => {
         if (result.isConfirmed) {
-          
+          // Realizar acciones adicionales si es necesario
         }
       });
     } else {
@@ -418,22 +604,20 @@ export function verificarContenido9() {
         confirmButtonText: 'Aceptar'
       }).then((result) => {
         if (result.isConfirmed) {
-          
+          // Realizar acciones adicionales si es necesario
         }
       });
-
-      
     }
   } else {
-    // Mostrar un mensaje de error si no se encuentra una URL válida en el código HTML
+    // Mostrar un mensaje de error si el texto específico no se encuentra en el código HTML
     Swal.fire({
       title: 'Error!',
-      text: 'No se encontro la url de la imagen',
+      text: 'El contenido del textarea no cumple con los requisitos.',
       icon: 'error', // Puedes cambiar el icono a 'info', 'warning', 'error', etc.
       confirmButtonText: 'Aceptar'
     }).then((result) => {
       if (result.isConfirmed) {
-        
+        // Realizar acciones adicionales si es necesario
       }
     });
   }

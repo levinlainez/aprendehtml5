@@ -159,7 +159,9 @@ const footerTemplate = `
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="https://www.gstatic.com/charts/loader.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
+
 <script src="src/js/bootstrap.bundle.min.js"></script>
+
 `;
 
 const footerDiv = document.getElementById("footer");

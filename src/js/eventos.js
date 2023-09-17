@@ -44,5 +44,32 @@ document.addEventListener('DOMContentLoaded', function() {
   verificarEstadoYEstilo('page6', 'navItemRed6');
   verificarEstadoYEstilo('page7', 'navItemRed7');
   verificarEstadoYEstilo('page8', 'navItemRed8');
+
+  // Crear un bucle for para iterar del 1 al 8
+for (let i = 1; i <= 8; i++) {
+    // Obtener el elemento textarea por su ID
+    const textarea = document.getElementById(`textareapage${i}`);
+    
+    // Verificar si el elemento textarea existe y si hay un valor en localStorage
+    if (textarea) {
+      const storageKey = `textpage${i}`;
+      const textoGuardado = localStorage.getItem(storageKey);
+      
+      // Si se encuentra un valor en localStorage, establecerlo en el textarea
+      if (textoGuardado) {
+        textarea.value = textoGuardado;
+      }
+    }
+  }
+  
+  // Agregar un evento para guardar el contenido del textarea en localStorage cuando cambie
+  document.addEventListener("input", function (event) {
+    const textarea = event.target;
+    if (textarea && textarea.id && textarea.id.startsWith("textareapage")) {
+      const storageKey = `textpage${textarea.id.substring(12)}`;
+      localStorage.setItem(storageKey, textarea.value);
+    }
+  });
+  
   
 

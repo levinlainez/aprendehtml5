@@ -352,8 +352,89 @@ export function verificarContenido8() {
   }
 }
 
+export function verificarContenido9() {
+  const textareaContent = document.getElementById('textareapage9').value;
+  const divContenido = document.getElementById('divContenido');
+  const errorMensaje = document.getElementById('errorMensaje');
 
+  // Extraer la URL de la imagen del código HTML ingresado
+  const matches = textareaContent.match(/src=["'](.*?)["']/);
+  if (matches && matches.length > 1) {
+    const imageUrl = matches[1];
 
+    // Buscar la cadena 'Mira mas fotos' en el contenido del textarea
+    const index = textareaContent.indexOf('Mira mas fotos');
+    if (index !== -1) {
+      // Si se encuentra la cadena, continuar con la lógica
+      divContenido.classList.add('imagen-cat');
+      divContenido.innerHTML = '';
+      errorMensaje.textContent = '';
 
+      // Crear elementos HTML para el h1, la imagen y el párrafo
+      const h1 = document.createElement('h1');
+      h1.textContent = 'MiauMundo';
+      const h2 = document.createElement('h2');
+      h2.textContent = 'Foto de Gatitos';
 
+      // Crear un párrafo <p> con el enlace y el texto restante
+      const nuevoParrafo = document.createElement('p');
+      nuevoParrafo.innerHTML = `
+        <a href="https://www.mundogatos.com/">Mira más fotos</a> ${textareaContent.slice(index + 14)}
+      `;
 
+      const img = document.createElement('img');
+      img.src = imageUrl;
+      img.alt = 'Es un gatito';
+
+      // Agregar los elementos creados al divContenido en el orden deseado
+      divContenido.appendChild(h1);
+      divContenido.appendChild(h2);
+      divContenido.appendChild(nuevoParrafo);
+      divContenido.appendChild(img);
+
+      // Guardar el estado en localStorage
+      localStorage.setItem('navItemRed9', 'true');
+      localStorage.setItem('textpage9', textareaContent);
+
+      // Mostrar el cuadro de diálogo SweetAlert2
+      Swal.fire({
+        title: '¡Felicidades!',
+        text: 'Felicidades, su código ha sido aprobado',
+        icon: 'success', // Puedes cambiar el icono a 'info', 'warning', 'error', etc.
+        confirmButtonText: 'Aceptar'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          
+        }
+      });
+    } else {
+      // Eliminar el estado de localStorage
+      localStorage.removeItem('navItemRed9');
+      localStorage.removeItem('textpage9');
+      Swal.fire({
+        title: 'Error!',
+        text: 'Lo siento, Tu código no cumple los requisitos',
+        icon: 'error', // Puedes cambiar el icono a 'info', 'warning', 'error', etc.
+        confirmButtonText: 'Aceptar'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          
+        }
+      });
+
+      
+    }
+  } else {
+    // Mostrar un mensaje de error si no se encuentra una URL válida en el código HTML
+    Swal.fire({
+      title: 'Error!',
+      text: 'No se encontro la url de la imagen',
+      icon: 'error', // Puedes cambiar el icono a 'info', 'warning', 'error', etc.
+      confirmButtonText: 'Aceptar'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        
+      }
+    });
+  }
+}

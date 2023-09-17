@@ -26,3 +26,11 @@ export function redireccionarAPaginaDos() {
   export function redireccionarAPaginaOcho() {
     window.location.href = '../pages/pagina8.html';
   }
+
+  export function redireccionarAPaginaNueve() {
+    window.location.href = '../pages/pagina9.html';
+  }
+
+  export function redireccionarAPaginaDiez() {
+    window.location.href = '../pages/pagina10.html';
+  }

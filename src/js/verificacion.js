@@ -58,7 +58,7 @@ export function verificarContenido2() {
 
   divContenido.innerHTML = '';
   // Verificar si el contenido del textarea contiene <h2>Tecnico en informatica</h2>
-  if (textareaContent.includes('<h2>Tecnico en informatica</h2>')) {
+  if (textareaContent.includes('<h2>Técnico en informática</h2>')) {
     // Si existe, agregar el contenido al div, manteniendo el contenido anterior
     divContenido.innerHTML += textareaContent;
     // Limpiar el mensaje de error si estaba mostrándose
@@ -239,6 +239,8 @@ export function verificarContenido5() {
       divContenido.appendChild(p);
       divContenido.appendChild(img);
       
+      document.getElementById('verificarBoton5').setAttribute('disabled', 'true');
+      document.getElementById('siguiente5').removeAttribute('disabled');
       
         // Guardar el estado en localStorage
       localStorage.setItem('navItemRed5', 'true');
@@ -310,6 +312,10 @@ export function verificarContenido6() {
           divContenido.appendChild(h1);
           divContenido.appendChild(p);
           divContenido.appendChild(img);
+
+          document.getElementById('verificarBoton6').setAttribute('disabled', 'true');
+          document.getElementById('siguiente6').removeAttribute('disabled');
+          
           
             // Guardar el estado en localStorage
           localStorage.setItem('navItemRed6', 'true');
@@ -397,6 +403,8 @@ export function verificarContenido7() {
           divContenido.appendChild(p);
           divContenido.appendChild(img);
           
+          document.getElementById('verificarBoton7').setAttribute('disabled', 'true');
+          document.getElementById('siguiente7').removeAttribute('disabled');
           
             // Guardar el estado en localStorage
           localStorage.setItem('navItemRed7', 'true');
@@ -453,7 +461,7 @@ export function verificarContenido8() {
       const imageUrl = matches[1];
 
       // Buscar la cadena 'alt="Es un gatito"' en el contenido del textarea
-      if (textareaContent.includes('<a href="https://www.mundogatos.com/">Galeria de Gatitos</a>')) {
+      if (textareaContent.includes('<a href="https://www.mundogatos.com/">Galería de Gatitos</a>')) {
           // Si se encuentra la cadena, continuar con la lógica
           divContenido.classList.add('imagen-cat');
           divContenido.innerHTML = '';
@@ -474,7 +482,7 @@ export function verificarContenido8() {
 
           const a = document.createElement('a');
           a.href = 'https://www.mundogatos.com/';
-          a.textContent = 'Galeria de Gatitos';
+          a.textContent = 'Galería de Gatitos';
           a.style.fontSize = '16px'; // Establecer el tamaño de fuente en 16px
           a.style.display = 'block'; // Forzar el enlace a ocupar toda una línea
 
@@ -484,6 +492,10 @@ export function verificarContenido8() {
           divContenido.appendChild(p);
           divContenido.appendChild(img);
           divContenido.appendChild(a);
+
+          document.getElementById('verificarBoton8').setAttribute('disabled', 'true');
+          document.getElementById('siguiente8').removeAttribute('disabled');
+          
           
             // Guardar el estado en localStorage
           localStorage.setItem('navItemRed8', 'true');
@@ -545,7 +557,7 @@ export function verificarContenido9() {
   const errorMensaje = document.getElementById('errorMensaje');
 
   // Verificar si el contenido del textarea contiene el texto específico
-  if (textareaContent.includes('<p><a href="https://www.mundogatos.com/">Mira mas fotos</a> de gatos en nuestra galeria.</p>')) {
+  if (textareaContent.includes('<p><a href="https://www.mundogatos.com/">Mira más fotos</a> de gatos en nuestra galería.</p>')) {
     // Extraer la URL de la imagen del código HTML ingresado
     const matches = textareaContent.match(/src=["'](.*?)["']/);
     if (matches && matches.length > 1) {
@@ -578,6 +590,10 @@ export function verificarContenido9() {
       divContenido.appendChild(nuevoParrafo);
       divContenido.appendChild(img);
 
+      document.getElementById('verificarBoton9').setAttribute('disabled', 'true');
+      document.getElementById('siguiente9').removeAttribute('disabled');
+      
+
       // Guardar el estado en localStorage
       localStorage.setItem('navItemRed9', 'true');
       localStorage.setItem('textpage9', textareaContent);
@@ -597,6 +613,94 @@ export function verificarContenido9() {
       // Eliminar el estado de localStorage
       localStorage.removeItem('navItemRed9');
       localStorage.removeItem('textpage9');
+      Swal.fire({
+        title: 'Error!',
+        text: 'Lo siento, Tu código no cumple los requisitos',
+        icon: 'error', // Puedes cambiar el icono a 'info', 'warning', 'error', etc.
+        confirmButtonText: 'Aceptar'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          // Realizar acciones adicionales si es necesario
+        }
+      });
+    }
+  } else {
+    // Mostrar un mensaje de error si el texto específico no se encuentra en el código HTML
+    Swal.fire({
+      title: 'Error!',
+      text: 'El contenido del textarea no cumple con los requisitos.',
+      icon: 'error', // Puedes cambiar el icono a 'info', 'warning', 'error', etc.
+      confirmButtonText: 'Aceptar'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        // Realizar acciones adicionales si es necesario
+      }
+    });
+  }
+}
+
+export function verificarContenido10() {
+  const textareaContent = document.getElementById('textareapage10').value;
+  const divContenido = document.getElementById('divContenido');
+  const errorMensaje = document.getElementById('errorMensaje');
+
+  // Verificar si el contenido del textarea contiene el texto específico
+  if (textareaContent.includes('<p><a href="https://www.mundogatos.com/" target="_blank">Mira más fotos</a> de gatos en nuestra galería</p>')) {
+    // Extraer la URL de la imagen del código HTML ingresado
+    const matches = textareaContent.match(/src=["'](.*?)["']/);
+    if (matches && matches.length > 1) {
+      const imageUrl = matches[1];
+
+      // Continuar con la lógica
+      divContenido.classList.add('imagen-cat');
+      divContenido.innerHTML = '';
+      errorMensaje.textContent = '';
+
+      // Crear elementos HTML para el h1, la imagen y el párrafo
+      const h1 = document.createElement('h1');
+      h1.textContent = 'MiauMundo';
+      const h2 = document.createElement('h2');
+      h2.textContent = 'Foto de Gatitos';
+
+      // Crear un párrafo <p> con el enlace y sin repetir "Mira más fotos"
+      const nuevoParrafo = document.createElement('p');
+      nuevoParrafo.innerHTML = `
+        <a href="https://www.mundogatos.com/" target="_blank">Mira más fotos</a> de gatos en nuestra galería.
+      `;
+
+      const img = document.createElement('img');
+      img.src = imageUrl;
+      img.alt = 'Es un gatito';
+
+      // Agregar los elementos creados al divContenido en el orden deseado
+      divContenido.appendChild(h1);
+      divContenido.appendChild(h2);
+      divContenido.appendChild(nuevoParrafo);
+      divContenido.appendChild(img);
+
+      document.getElementById('verificarBoton10').setAttribute('disabled', 'true');
+      document.getElementById('siguiente10').removeAttribute('disabled');
+      
+
+      // Guardar el estado en localStorage
+      localStorage.setItem('navItemRed10', 'true');
+      localStorage.setItem('textpage10', textareaContent);
+
+      // Mostrar el cuadro de diálogo SweetAlert2
+      Swal.fire({
+        title: '¡Felicidades!',
+        text: 'Felicidades, su código ha sido aprobado',
+        icon: 'success', // Puedes cambiar el icono a 'info', 'warning', 'error', etc.
+        confirmButtonText: 'Aceptar'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          // Realizar acciones adicionales si es necesario
+        }
+      });
+    } else {
+      // Eliminar el estado de localStorage
+      localStorage.removeItem('navItemRed10');
+      localStorage.removeItem('textpage10');
       Swal.fire({
         title: 'Error!',
         text: 'Lo siento, Tu código no cumple los requisitos',

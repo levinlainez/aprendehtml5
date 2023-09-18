@@ -44,6 +44,8 @@ document.addEventListener('DOMContentLoaded', function() {
   verificarEstadoYEstilo('page6', 'navItemRed6');
   verificarEstadoYEstilo('page7', 'navItemRed7');
   verificarEstadoYEstilo('page8', 'navItemRed8');
+  verificarEstadoYEstilo('page9', 'navItemRed9');
+  verificarEstadoYEstilo('page10', 'navItemRed10');
 
   // Crear un bucle for para iterar del 1 al 8
 for (let i = 1; i <= 8; i++) {

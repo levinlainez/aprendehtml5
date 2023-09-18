@@ -34,3 +34,6 @@ export function redireccionarAPaginaDos() {
   export function redireccionarAPaginaDiez() {
     window.location.href = '../pages/pagina10.html';
   }
+  export function redireccionarAPaginaOnce() {
+    window.location.href = '../pages/pagina11.html';
+  }

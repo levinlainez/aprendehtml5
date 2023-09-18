@@ -1,10 +1,10 @@
 // app.js
 // app.js
 import { verificarContenido, verificarContenido2, verificarContenido3, verificarContenido4, verificarContenido5, 
-  verificarContenido6, verificarContenido7, verificarContenido8, verificarContenido9, verificarContenido10 } from './verificacion.js';
+  verificarContenido6, verificarContenido7, verificarContenido8, verificarContenido9, verificarContenido10, verificarContenido11 } from './verificacion.js';
 import { redireccionarAPaginaDos, redireccionarAPaginaTres, redireccionarAPaginaCuatro, redireccionarAPaginaCinco, 
   redireccionarAPaginaSeis, redireccionarAPaginaSiete, redireccionarAPaginaOcho, redireccionarAPaginaNueve, 
-  redireccionarAPaginaDiez, redireccionarAPaginaOnce } from './redireccionar.js';
+  redireccionarAPaginaDiez, redireccionarAPaginaOnce, redireccionarAPaginaDoce } from './redireccionar.js';
 import './eventos.js';
 
 
@@ -68,6 +68,13 @@ if (verificarBoton10) {
   verificarBoton10.addEventListener('click', verificarContenido10);
 }
 
+// Verificar si el elemento con el ID 'verificarBoton2' existe antes de agregar un evento
+const verificarBoton11 = document.getElementById('verificarBoton11');
+if (verificarBoton11) {
+  verificarBoton11.addEventListener('click', verificarContenido11);
+}
+
+
 // Verificar si el elemento con el ID 'siguiente' existe antes de agregar un evento
 const siguienteBoton = document.getElementById('siguiente');
 if (siguienteBoton) {
@@ -128,6 +135,11 @@ if (siguiente10Boton) {
   siguiente10Boton.addEventListener('click', redireccionarAPaginaOnce);
 }
 
+// Verificar si el elemento con el ID 'siguiente3' existe antes de agregar un evento
+const siguiente11Boton = document.getElementById('siguiente11');
+if (siguiente11Boton) {
+  siguiente11Boton.addEventListener('click', redireccionarAPaginaDoce);
+}
 
 
 

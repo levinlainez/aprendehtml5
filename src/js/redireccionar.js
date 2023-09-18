@@ -37,3 +37,7 @@ export function redireccionarAPaginaDos() {
   export function redireccionarAPaginaOnce() {
     window.location.href = '../pages/pagina11.html';
   }
+
+  export function redireccionarAPaginaDoce() {
+    window.location.href = '../pages/pagina12.html';
+  }

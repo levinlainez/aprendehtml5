@@ -1,3 +1,4 @@
+/*
 document.addEventListener('DOMContentLoaded', function() {
     // Obtiene la URL actual
     const currentPageUrl = window.location.href;
@@ -20,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }
   });
-  
+  */
   
   function verificarEstadoYEstilo(itemId, storageKey) {
     const estadoEnLocalStorage = localStorage.getItem(storageKey);
@@ -73,5 +74,6 @@ for (let i = 1; i <= 8; i++) {
     }
   });
   
+
   
 

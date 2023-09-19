@@ -83,22 +83,23 @@ headElement.appendChild(pageTitle);
 const encabezadoTemplate = `
 
 <div class="col">
-    <div class="card  shadow">
+    <div class="">
         <div class="card-body">
             <div class="row justify-content-around align-items-center">
                 
                 <div class="col-md-4  d-none d-md-block "> <!-- Columna para el título -->
-                    <img src="../img/logo-FIDE.png" width="100" height="75" alt="Logo FIDE">
+                    <img src="../img/image.png" width="120" height="120" alt="Logo FIDE">
 
                         
                 </div>
                 <div class="col-md-4"> <!-- Columna para el título -->
-                    <h1 class="tw-bold text-dec user-select-none mt-2 centrar-imagen">
-                        Curso<i class="fa-solid fa-heart fa-beat" style="--fa-beat-scale: 2.0;"></i>HTML5
-                    </h1>
-                </div>
+                <h1 class="tw-bold text-dec user-select-none mt-2 centrar-imagen">
+                    Curso<i class="fa-solid fa-heart fa-beat" style="--fa-beat-scale: 2.0;"></i>HTML5
+                </h1>
+            </div>
+               
                 <div class="col-md-4" > <!-- Columna para la navegación -->
-                    <nav >
+                    <nav id="nav-bar">
                         <ul class="nav nav-pills justify-content-center "> <!-- Alinea la navegación a la derecha -->
                        
                             <!-- Alinea la navegación a la derecha -->
@@ -125,13 +126,17 @@ const encabezadoTemplate = `
 
 const headerDiv = document.getElementById("header");
 headerDiv.innerHTML = encabezadoTemplate;
-
+/*
 //navegacion
 const navDiv = document.getElementById("nav-pages");
-const totalPaginas = 22; // Cambia el número según tu necesidad
-const numPorPagina = 22; // Cambia el número según tu necesidad
+navDiv.style.backgroundColor = "black";
+navDiv.style.color = "white"; // Cambia el color del texto a blanco
+navDiv.style.marginTop = "10px"; // Cambia el margen superior
+
+const totalPaginas = 42; // Cambia el número según tu necesidad
+const numPorPagina = 42; // Cambia el número según tu necesidad
 const navTemplate = document.createElement("ul");
-navTemplate.classList.add("pagination", "pagination-sm", "pagination-responsive");
+navTemplate.classList.add("pagination", "pagination-sm", "pagination-responsive", "mt-4");
 
 for (let i = 1; i <= totalPaginas; i++) {
   const li = document.createElement("li");
@@ -150,7 +155,7 @@ for (let i = 1; i <= totalPaginas; i++) {
     navTemplate.innerHTML = "";
   }
 }
-  
+*/
   
 
 

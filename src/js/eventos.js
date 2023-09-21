@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
   document.addEventListener('DOMContentLoaded', function() {
     // Define el número total de páginas
     const totalPaginas = 69;
-    
+    document.getElementById('btn-previous').removeAttribute('disabled');
     // Obtiene el número de página actual desde la URL
     let paginaActual = obtenerNumeroPagina(window.location.href);
     
@@ -148,6 +148,19 @@ document.addEventListener('DOMContentLoaded', function() {
   // ... y así sucesivamente para otros elementos de navegación
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  // Ocultar el loader cuando se cargue completamente el HTML y JavaScript
+  ocultarLoader();
+});
 
+function mostrarLoader() {
+  const loader = document.getElementById('loader');
+  loader.style.display = 'block';
+}
+
+function ocultarLoader() {
+  const loader = document.getElementById('loader');
+  loader.style.display = 'none';
+}
 
 

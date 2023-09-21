@@ -1,86 +1,10 @@
 
-// Obtener la referencia al elemento head
-const headElement = document.head;
 
 
-
-// Crear un elemento link para Font Awesome 6.0.0 CSS
-const linkFontAwesome6 = document.createElement("link");
-linkFontAwesome6.rel = "stylesheet";
-linkFontAwesome6.href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css";
-linkFontAwesome6.integrity = "sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==";
-linkFontAwesome6.crossOrigin = "anonymous";
-linkFontAwesome6.referrerPolicy = "no-referrer";
-headElement.appendChild(linkFontAwesome6);
-
-
-// Crear un elemento link para animate.css
-const linkAnimateCSS = document.createElement("link");
-linkAnimateCSS.rel = "stylesheet";
-linkAnimateCSS.href = "../style/animate.min.css";
-headElement.appendChild(linkAnimateCSS);
-
-
-// Crear un elemento link para Bootstrap CSS
-const linkBootstrap = document.createElement("link");
-linkBootstrap.rel = "stylesheet";
-linkBootstrap.href = "../style/bootstrap.min.css";
-headElement.appendChild(linkBootstrap);
-
-// Crear un elemento link para Bootstrap CSS
-const linkSweetalert = document.createElement("link");
-linkSweetalert.rel = "stylesheet";
-linkSweetalert.href = "../style/sweetalert2.css";
-headElement.appendChild(linkSweetalert);
-
-// Crear un elemento link para Bootstrap CSS
-const linkSweetalert2 = document.createElement("link");
-linkSweetalert2.rel = "stylesheet";
-linkSweetalert2.href = "../style/sweetalert2.min.css";
-headElement.appendChild(linkSweetalert2);
-
-
-
-// Crear un elemento link para tu estilo personalizado
-const linkCustomStyle = document.createElement("link");
-linkCustomStyle.rel = "stylesheet";
-linkCustomStyle.href = "../style/style.css";
-headElement.appendChild(linkCustomStyle);
-
-// Crear un elemento meta para X-UA-Compatible
-const metaXUA = document.createElement("meta");
-metaXUA.setAttribute("http-equiv", "X-UA-Compatible");
-metaXUA.content = "IE=edge";
-headElement.appendChild(metaXUA);
-
-// Crear un elemento meta para viewport
-const metaViewport = document.createElement("meta");
-metaViewport.name = "viewport";
-metaViewport.content = "width=device-width, initial-scale=1.0";
-headElement.appendChild(metaViewport);
-
-// Crear un elemento meta para descripción
-const metaDescription = document.createElement("meta");
-metaDescription.name = "description";
-metaDescription.content = "Curso de HTM5";
-headElement.appendChild(metaDescription);
-
-// Crear un elemento link para el favicon
-const linkFavicon = document.createElement("link");
-linkFavicon.rel = "icon";
-linkFavicon.type = "image/png";
-linkFavicon.sizes = "96x96";
-linkFavicon.href = "../img/favicon-96x96.png";
-headElement.appendChild(linkFavicon);
-
-
-// Crear un elemento title para el título de la página actual
-const pageTitle = document.createElement("title");
-pageTitle.textContent = "Curso HTML5"; // Puedes personalizar el título según la página actual
-headElement.appendChild(pageTitle);
-
-//header
+            
 const encabezadoTemplate = `
+
+
 
 <div class="col">
     <div class="">

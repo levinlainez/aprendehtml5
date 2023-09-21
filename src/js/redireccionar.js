@@ -1,14 +1,14 @@
 // redireccion.js
-export function redireccionarAPaginaDos() {
-    window.location.href = '/src/pages/pagina2.html';
-  }
-  
+//xport function redireccionarAPaginaDos() {
+  //  window.location.href = '/src/pages/pagina2.html';
+  //}
+/*
   export function redireccionarAPaginaTres() {
-    window.location.href = '../pages/pagina5.html';
+    window.location.href = '../pages/pagina3.html';
   }
   
   export function redireccionarAPaginaCuatro() {
-    window.location.href = '../pages/pagina5.html';
+    window.location.href = '../pages/pagina4.html';
   }
   
   export function redireccionarAPaginaCinco() {
@@ -41,3 +41,4 @@ export function redireccionarAPaginaDos() {
   export function redireccionarAPaginaDoce() {
     window.location.href = '../pages/pagina12.html';
   }
+  */

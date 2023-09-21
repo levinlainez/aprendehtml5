@@ -5,7 +5,7 @@ const generarPaginacion = (totalPaginas) => {
   let contadorLi = 0; // Inicializa el contador de elementos li
 
   for (let i = 1; i <= totalPaginas; i++) {
-    if (contadorLi === 0 || contadorLi % 20 === 0) {
+    if (contadorLi === 0 || contadorLi % 17 === 0) {
       // Crea un nuevo ul cuando el contador alcanza 0 o múltiplo de 20
       ul = document.createElement("ul");
       ul.classList.add("pagination", "pagination-sm", "pagination-responsive");
@@ -25,7 +25,7 @@ const generarPaginacion = (totalPaginas) => {
     
     contadorLi++;
 
-    if (contadorLi === 20 || i === totalPaginas) {
+    if (contadorLi === 17 || i === totalPaginas) {
       // Agrega el ul al completadoDiv cuando el contador llega a 20 o es la última página
       completadoDiv.appendChild(ul);
       contadorLi = 0; // Reinicia el contador

@@ -1,6 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Curso de HTML5">
+    
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+        crossorigin="anonymous">
+
+    <!-- Font Awesome 6.0.0 CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerPolicy="no-referrer">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="../style/bootstrap.min.css">
+     <link rel="stylesheet" href="../style/sweetalert2.min.css">
+
+     <link rel="stylesheet" href="../style/sweetalert2.css">
+
+     <!-- Tu estilo personalizado -->
+     <link rel="stylesheet" href="../style/style.css">
+     <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon-96x96.png">
+
+    <title>Curso HTML5</title>
     
 </head>
 <body>
@@ -53,25 +83,37 @@
                                                 <p class="text-left projos">&lt;/html&gt;</p>
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-lg-3 col-md-8 col-sm-12 mb-2 align-middle d-grid">
+                                        <div class="row" >
+                                            <div class="col-lg-3 col-md-8 col-sm-12  mb-2 align-middle d-grid">
+                                                    
+                                                <button
+                                                    class="btn btn-outline-primary rounded fw-bold "
+                                                    disabled id="btn-previous" type="submit">
+                                                    <i class="fa-solid fa-circle-arrow-left"></i> Atrás
+                                                </button>
+                                            
+                                            
+                                                </div>
+                                                <div class="col-lg-3 col-md-8 col-sm-12  mb-2 align-middle d-grid">
                                                 <button
                                                     class="btn btn-outline-success rounded fw-bold "
                                                     id="verificarBoton6">
                                                     <i class="fas fa-play"></i> VERIFICAR
                                                 </button>
-                                            </div>
-                                            <div class="col-lg-3 col-md-8 col-sm-12 mb-2 align-middle d-grid">
+                                                </div>
+                                                <div class="col-lg-3 col-md-8 col-sm-12  mb-2 align-middle d-grid">
                                                 <button
                                                     class="btn btn-outline-primary rounded fw-bold "
-                                                    disabled id="siguiente6" type="submit">
+                                                    disabled id="btn-next" type="submit">
                                                     <i class="fa-solid fa-circle-right"></i> SIGUIENTE
                                                 </button>
-                                            </div>
-                                            <div
-                                                class="col-lg-3 col-md-8 col-sm-12 mb-2  text-center">
+                                            
+                                                </div>
+                                                <div
+                                                class="col-lg-6 col-md-8 col-sm-12   ">
                                                 <p id="errorMensaje" style="color: red;"></p>
-                                            </div>
+                                                </div>
+
                                         </div>
                                     </div>
                                 </div>

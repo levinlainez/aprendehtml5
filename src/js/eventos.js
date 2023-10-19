@@ -158,9 +158,4 @@ function mostrarLoader() {
   loader.style.display = 'block';
 }
 
-function ocultarLoader() {
-  const loader = document.getElementById('loader');
-  loader.style.display = 'none';
-}
-
 

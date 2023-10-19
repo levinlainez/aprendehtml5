@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = nuevaUrl;
     }
     
-    // Verifica el progreso del usuario y controla el acceso a la lección
+    /* Verifica el progreso del usuario y controla el acceso a la lección
     if (paginaActual > 1 && (!progresoUsuario || paginaActual > parseInt(progresoUsuario))) {
         // Si el usuario intenta acceder a una lección posterior sin completar la anterior,
         // muestra un mensaje de error y redirige al usuario a la página del ejercicio anterior.
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         redirigirAPaginaAnterior();
     }
-    
+    */
     // Asigna el evento al botón "Siguiente"
     const btnNext = document.getElementById('btn-next');
     btnNext.addEventListener('click', function() {
